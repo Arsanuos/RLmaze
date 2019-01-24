@@ -44,7 +44,12 @@ public class State {
         this.value = value;
     }
 
+    public List<Action> getActions() {
+        return actions;
+    }
 
-
+    public void setActions(List<Action> actions) {
+        this.actions = actions;
+    }
 
 }

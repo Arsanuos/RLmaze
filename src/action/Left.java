@@ -5,8 +5,15 @@ import graph.StateManager;
 import utils.Query;
 
 public class Left extends Action {
+
+
+    public Left(String type){
+        super(type);
+    }
+
     @Override
     public State getNextState(State state) {
-        return StateManager.getInstance().getState(new Query(state.getI(), state.getJ() - 1));
+        int j = state.getJ() - 1 >= 0 ? state.getJ() - 1 : 0;
+        return StateManager.getInstance().getState(new Query(state.getI(), j), state);
     }
 }
