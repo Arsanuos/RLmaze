@@ -1,6 +1,7 @@
 package action;
 
 import graph.State;
+import utils.Config;
 
 import java.util.List;
 
@@ -25,13 +26,13 @@ public class Director {
 
     private static Action getRelativeAction(State state, State maxState){
         if(state.getI() == maxState.getI() && state.getJ() == maxState.getJ() - 1){
-            return new Right();
+            return new Right(Config.RIGHT);
         }else if(state.getI() == maxState.getI() && state.getJ() == maxState.getJ() + 1){
-            return new Left();
+            return new Left(Config.LEFT);
         }else if(state.getI() == maxState.getI() - 1 && state.getJ() == maxState.getJ()){
-            return new Up();
+            return new Up(Config.UP);
         }else if(state.getI() == maxState.getI() + 1 && state.getJ() == maxState.getJ()){
-            return new Down();
+            return new Down(Config.DOWN);
         }
         throw new RuntimeException();
     }

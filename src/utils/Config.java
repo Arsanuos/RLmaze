@@ -9,5 +9,11 @@ public class Config {
     public static String DOWN = "DOWN";
     public static String LEFT = "LEFT";
     public static String RIGHT = "RIGHT";
+    public static double GOAL_VAL = 0;
+    public enum StateTypes{
+        NORMAL_STATE, GOAL, BLOCK;
+    }
+    public static double STATE_INIT_VAL = 0;
+    public static int BOLCKS_NUMBER = Config.N/10;
 
 }

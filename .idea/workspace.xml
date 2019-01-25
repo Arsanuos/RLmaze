@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="110107bb-08dd-474e-acf5-76d075347b4a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/action/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategy/PolicyIteration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategy/policyIF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/EmptyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/Goal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/StateFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/Down.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/Down.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/Right.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action/Up.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/Up.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/Director.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/StateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/StateManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Config.java" afterDir="false" />
@@ -30,10 +25,18 @@
       <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="510">
+              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,25 +45,17 @@
       <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/action/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="345">
               <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-              <folding>
-                <element signature="e#91#92#0" expanded="true" />
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Query.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/Query.java">
+      <file leaf-file-name="Director.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/action/Director.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="35" column="25" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="510">
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,14 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PolicyIteration.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/strategy/PolicyIteration.java">
+      <file leaf-file-name="StateFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/graph/StateFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -83,64 +75,8 @@
       <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Up.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Up.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Down.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Down.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Left.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Left.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Right.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Right.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-              </folding>
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -148,10 +84,50 @@
       <file leaf-file-name="StateManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/StateManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+            <state relative-caret-position="1566">
+              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2740#2747#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Block.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graph/Block.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <folding>
+                <element signature="e#171#172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Goal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graph/Goal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmptyState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graph/EmptyState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+              <folding>
+                <element signature="e#135#136#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,16 +156,21 @@
         <option value="$PROJECT_DIR$/src/utils/Query.java" />
         <option value="$PROJECT_DIR$/src/controller/Game.java" />
         <option value="$PROJECT_DIR$/src/strategy/policyIF.java" />
-        <option value="$PROJECT_DIR$/src/graph/State.java" />
-        <option value="$PROJECT_DIR$/src/action/Director.java" />
         <option value="$PROJECT_DIR$/src/action/Action.java" />
         <option value="$PROJECT_DIR$/src/action/Down.java" />
         <option value="$PROJECT_DIR$/src/action/Left.java" />
         <option value="$PROJECT_DIR$/src/action/Right.java" />
         <option value="$PROJECT_DIR$/src/action/Up.java" />
+        <option value="$PROJECT_DIR$/src/strategy/PolicyIteration.java" />
+        <option value="$PROJECT_DIR$/src/graph/State.java" />
+        <option value="$PROJECT_DIR$/src/graph/Block.java" />
+        <option value="$PROJECT_DIR$/src/graph/Goal.java" />
+        <option value="$PROJECT_DIR$/src/graph/EmptyState.java" />
+        <option value="$PROJECT_DIR$/src/graph/Initializer.java" />
         <option value="$PROJECT_DIR$/src/utils/Config.java" />
         <option value="$PROJECT_DIR$/src/graph/StateManager.java" />
-        <option value="$PROJECT_DIR$/src/strategy/PolicyIteration.java" />
+        <option value="$PROJECT_DIR$/src/action/Director.java" />
+        <option value="$PROJECT_DIR$/src/graph/StateFactory.java" />
       </list>
     </option>
   </component>
@@ -215,6 +196,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -262,7 +244,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,12 +282,13 @@
       <option name="presentableId" value="Default" />
       <updated>1548353302558</updated>
       <workItem from="1548353307252" duration="6433000" />
-      <workItem from="1548362858226" duration="7280000" />
+      <workItem from="1548362858226" duration="7331000" />
+      <workItem from="1548436246233" duration="5512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13713000" />
+    <option name="totallyTimeSpent" value="19276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -314,6 +296,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32991803" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -325,7 +308,7 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4989775" visible="true" weight="0.15040432" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4989775" visible="true" weight="0.15040432" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="0" />
       <window_info id="Structure" order="7" sideWeight="0.5010225" side_tool="true" weight="0.24959569" />
@@ -350,7 +333,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -360,6 +343,117 @@
           <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Up.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Down.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Left.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Right.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/StateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2740#2747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategy/PolicyIteration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -368,10 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -422,8 +512,6 @@
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,6 +522,7 @@
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2740#2747#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,20 +563,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/action/Director.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="405">
+          <caret line="35" column="25" selection-start-line="30" selection-start-column="8" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -496,88 +575,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/action/Down.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="165">
           <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/action/Left.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="180">
           <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/action/Right.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="180">
           <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/action/Up.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="180">
           <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/action/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding>
-            <element signature="e#91#92#0" expanded="true" />
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/StateManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -591,6 +620,106 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/StateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2740#2747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/EmptyState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/Goal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Director.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/StateFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>

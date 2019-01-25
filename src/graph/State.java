@@ -10,13 +10,17 @@ public class State {
     private int i;
     private int j;
     private double value;
+    private boolean block;
+    private boolean goal;
 
     private List<Action> actions;
 
-    public State(int i, int j, double value){
+    public State(int i, int j, double value, boolean goal, boolean block){
         this.j = j;
         this.i = i;
         this.value = value;
+        this.goal = goal;
+        this.block = block;
         actions = new ArrayList<Action>();
     }
 
@@ -34,6 +38,22 @@ public class State {
 
     public void setJ(int j) {
         this.j = j;
+    }
+
+    public boolean isBlock() {
+        return block;
+    }
+
+    public void setBlock(boolean block) {
+        block = block;
+    }
+
+    public boolean isGoal() {
+        return goal;
+    }
+
+    public void setGoal(boolean goal) {
+        this.goal = goal;
     }
 
     public double getValue() {
