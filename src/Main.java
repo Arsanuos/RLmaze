@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         Game game = new Game();
-        game.startGame(Config.POLICY.VALUE_ITERATION);
+        game.startGame(Config.POLICY.POLICY_ITERATION);
         MainFrame mainFrame = new MainFrame();
         //mainFrame.newGame();
         State state = StateManager.getInstance().getState(new Query(0, 0), null);
@@ -20,6 +20,7 @@ public class Main {
         while(!state.isGoal()){
             action = state.getActions().get(0);
             state.setContainsPlayer(false);
+            state.setPartOfPath(true);
             state = action.getNextState(state);
             state.setContainsPlayer(true);
             try{
