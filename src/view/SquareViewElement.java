@@ -87,10 +87,10 @@ public class SquareViewElement extends JComponent {
 		super.paintComponent(graphics);
 		if(this.getState().isBlock()){
 			graphics.drawImage(this.getWallImg(), 0, 0, IMG_SIZE, IMG_SIZE, null);
-		}else if(this.state.isGoal()){
-			graphics.drawImage(this.getGoldImg(), 0, 0, IMG_SIZE, IMG_SIZE, null);
 		}else if(this.state.isContainsPlayer()){
 			graphics.drawImage(this.getPlayerImg(), 0, 0, IMG_SIZE, IMG_SIZE, null);
+		}else if(this.state.isGoal()){
+			graphics.drawImage(this.getGoldImg(), 0, 0, IMG_SIZE, IMG_SIZE, null);
 		}else {
 			graphics.drawImage(this.getFreeImg(), 0, 0, IMG_SIZE, IMG_SIZE, null);
 		}

@@ -5,9 +5,11 @@ import action.Director;
 import graph.State;
 import graph.StateManager;
 import utils.Config;
+import utils.Query;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class PolicyIteration implements policyIF{
 
@@ -27,6 +29,21 @@ public class PolicyIteration implements policyIF{
         }
         StateManager.getInstance().printGrid();
         StateManager.getInstance().printAction();
+        State state = StateManager.getInstance().getState(new Query(0, 0), null);
+        Action action = null;
+        int cnt = 0;
+        while(!state.isGoal()){
+            action = state.getActions().get(0);
+            state.setContainsPlayer(false);
+            state = action.getNextState(state);
+            state.setContainsPlayer(true);
+            cnt++;
+            if(cnt > Config.N * Config.N + 5){
+                throw new RuntimeException();
+            }
+        }
+        state.setContainsPlayer(false);
+        StateManager.getInstance().getState(new Query(0, 0), null).setContainsPlayer(true);
     }
 
     private void modifyValues(){

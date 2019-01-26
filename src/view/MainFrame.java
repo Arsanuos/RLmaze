@@ -6,6 +6,8 @@ import java.awt.BorderLayout;
 import javax.swing.*;
 
 public class MainFrame extends JFrame {
+
+
 	private MazeView mazeView;
 	private JScrollPane scrollView;
 
@@ -48,7 +50,7 @@ public class MainFrame extends JFrame {
 	
 	public void updateGame() {
 		// Updating the location of the Player requires only a repainting of the components.
-		this.getMazeView().newGame();
+		//this.getMazeView().newGame();
 		this.revalidate();
 		this.repaint();
 	}

@@ -1,7 +1,7 @@
 package utils;
 
 public class Config {
-    public static int N = 5;
+    public static int N = 10;
     public static double EPS = 1;
     public static double R = -1;
     public static double POLICY_ITERATION = 100;
@@ -14,7 +14,7 @@ public class Config {
         NORMAL_STATE, GOAL, BLOCK;
     }
     public static double STATE_INIT_VAL = 0;
-    public static int BOLCKS_NUMBER = (int)((float) 20/100 * Config.N * Config.N);
+    public static int BOLCKS_NUMBER = (int)((float) 30/100 * Config.N * Config.N);
     public enum POLICY{
         POLICY_ITERATION, VALUE_ITERATION;
     }
