@@ -1,6 +1,9 @@
 # RLmaze
 Maze solver using reinforcement learning methods (value iteration, policy iteration)
 
+# Credit
+Thanks [@DylanVanAssche]( https://github.com/DylanVanAssche )`
+
 ## Tests
 ### Policy Iteration
 ![](videos/hendy.gif)
