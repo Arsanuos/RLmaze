@@ -3,6 +3,6 @@ Maze solver using reinforcement learning methods (value iteration, policy iterat
 
 ## Tests
 ### Policy Iteration
-![](hendy.gif)
+![](videos/hendy.gif)
 ### Value Iteration
-![](essam.gif)
+![](videos/essam.gif)
