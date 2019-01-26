@@ -2,7 +2,7 @@
 Maze solver using reinforcement learning methods (value iteration, policy iteration)
 
 # Credit
-Thanks [@DylanVanAssche]( https://github.com/DylanVanAssche )`
+Thanks [DylanVanAssche]( https://github.com/DylanVanAssche )`for the beautiful GUI.
 
 ## Tests
 ### Policy Iteration
