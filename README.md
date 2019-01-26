@@ -8,6 +8,6 @@ Maze solver using reinforcement learning methods (value iteration, policy iterat
 ![](videos/essam.gif)
 
 # Licence
-Do what you want (y)
+Do what you want :thumbsup:
 
-MADE FOR REVENGE
+MADE FOR REVENGE :smiling_imp:
