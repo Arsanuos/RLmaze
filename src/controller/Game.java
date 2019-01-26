@@ -14,6 +14,7 @@ public class Game {
                 PolicyFactory.getPolicy(policy).eval();
                 break;
             }catch (Exception e){
+                System.out.println("NEW GAME");
                 stateManager.initGraph();
             }
         }

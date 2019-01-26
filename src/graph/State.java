@@ -101,4 +101,12 @@ public class State {
         return false;
     }
 
+    @Override
+    protected Object clone(){
+        State state = new State(this.i, this.j, this.value, this.goal, this.block);
+        state.setActions(this.getActions());
+        state.setContainsPlayer(this.containsPlayer);
+        state.setPartOfPath(this.partOfPath);
+        return state;
+    }
 }

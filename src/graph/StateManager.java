@@ -159,4 +159,22 @@ public class StateManager {
         }
     }
 
+    public List<State> getClonedStates() {
+        List<State> clonedStates = new ArrayList<>();
+        for(State state: this.states){
+            clonedStates.add((State) state.clone());
+        }
+        return clonedStates;
+    }
+
+    public boolean sameStatesValues(List<State> prevStates){
+        for(int i = 0 ;i < Config.N; i++){
+            State state = states.get(i);
+            if(Math.abs(state.getValue() - prevStates.get(i).getValue()) > Config.VALUE_ITERATION_THRESHOLD_EQUALITY){
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

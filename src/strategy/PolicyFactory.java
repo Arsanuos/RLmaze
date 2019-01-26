@@ -8,7 +8,7 @@ public class PolicyFactory {
         if(policy == Config.POLICY.POLICY_ITERATION){
             return new PolicyIteration();
         }else if(policy == Config.POLICY.VALUE_ITERATION){
-            //return new ValueIteration();
+            return new ValueIteration();
         }
         throw new RuntimeException();
     }

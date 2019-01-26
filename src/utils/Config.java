@@ -14,9 +14,10 @@ public class Config {
         NORMAL_STATE, GOAL, BLOCK;
     }
     public static double STATE_INIT_VAL = 0;
-    public static int BOLCKS_NUMBER = (int)((float) 30/100 * Config.N * Config.N);
+    public static int BOLCKS_NUMBER = (int)((float)30/100 * Config.N*Config.N);
     public enum POLICY{
         POLICY_ITERATION, VALUE_ITERATION;
     }
+    public static double VALUE_ITERATION_THRESHOLD_EQUALITY = .001;
 
 }

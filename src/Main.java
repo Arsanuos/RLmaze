@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         Game game = new Game();
-        game.startGame(Config.POLICY.POLICY_ITERATION);
+        game.startGame(Config.POLICY.VALUE_ITERATION);
         MainFrame mainFrame = new MainFrame();
         //mainFrame.newGame();
         State state = StateManager.getInstance().getState(new Query(0, 0), null);

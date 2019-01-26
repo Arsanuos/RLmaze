@@ -17,34 +17,21 @@ public class PolicyIteration implements policyIF{
     @Override
     public void eval() {
         StateManager stateManager = StateManager.getInstance();
+        Optimizer optimizer = new Optimizer();
         List<Action> prevActions = stateManager.getAllActions();
         int i = 0;
+
         while(i == 0 || !stateManager.sameActions(prevActions)){
             modifyValues();
-            StateManager.getInstance().printGrid();
-            StateManager.getInstance().printAction();
             i += 1;
             prevActions = stateManager.getAllActions();
-            improvePolicy();
+            optimizer.improvePolicy();
         }
         StateManager.getInstance().printGrid();
         StateManager.getInstance().printAction();
-        State state = StateManager.getInstance().getState(new Query(0, 0), null);
-        Action action = null;
-        int cnt = 0;
-        while(!state.isGoal()){
-            action = state.getActions().get(0);
-            state.setContainsPlayer(false);
-            state = action.getNextState(state);
-            state.setContainsPlayer(true);
-            cnt++;
-            if(cnt > Config.N * Config.N + 5){
-                throw new RuntimeException();
-            }
-        }
-        state.setContainsPlayer(false);
-        StateManager.getInstance().getState(new Query(0, 0), null).setContainsPlayer(true);
+        optimizer.checkSolvable();
     }
+
 
     private void modifyValues(){
         StateManager stateManager = StateManager.getInstance();
@@ -63,14 +50,5 @@ public class PolicyIteration implements policyIF{
         }
     }
 
-    private void improvePolicy(){
-        StateManager stateManager = StateManager.getInstance();
-        for(State state: stateManager.getAllStates()){
-            List<State> neighbours = stateManager.getNeighbours(state);
-            Action action = Director.getMaxAction(state, neighbours);
-            state.getActions().clear();
-            state.getActions().add(action);
-        }
-    }
 
 }
