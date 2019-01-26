@@ -23,7 +23,7 @@ public class Query {
 
     @Override
     public int hashCode(){
-        return this.i * this.j * rand.nextInt(Config.N);
+        return this.i * this.j;
     }
 
     @Override

@@ -12,6 +12,8 @@ public class State {
     private double value;
     private boolean block;
     private boolean goal;
+    private boolean partOfPath;
+    private boolean containsPlayer;
 
     private List<Action> actions;
 
@@ -22,6 +24,22 @@ public class State {
         this.goal = goal;
         this.block = block;
         actions = new ArrayList<Action>();
+    }
+
+    public boolean isContainsPlayer() {
+        return containsPlayer;
+    }
+
+    public void setContainsPlayer(boolean containsPlayer) {
+        this.containsPlayer = containsPlayer;
+    }
+
+    public boolean isPartOfPath() {
+        return partOfPath;
+    }
+
+    public void setPartOfPath(boolean partOfPath) {
+        this.partOfPath = partOfPath;
     }
 
     public int getI() {
@@ -70,6 +88,17 @@ public class State {
 
     public void setActions(List<Action> actions) {
         this.actions = actions;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj instanceof State){
+            State state = (State) obj;
+            if(state.getJ() == this.j && state.getI() == this.getI()){
+                return true;
+            }
+        }
+        return false;
     }
 
 }

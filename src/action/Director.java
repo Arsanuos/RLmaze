@@ -14,9 +14,10 @@ public class Director {
 
     private static State getMaxState(List<State> neighbours){
         State maxState = null;
-        double val = Double.MIN_VALUE;
+        double val = -1 * Double.MAX_VALUE;
         for(State nState: neighbours){
             if(val < nState.getValue()){
+                //System.out.println("" + nState.getI() + "-" + "" + nState.getJ());
                 maxState = nState;
                 val = nState.getValue();
             }
@@ -25,14 +26,14 @@ public class Director {
     }
 
     private static Action getRelativeAction(State state, State maxState){
-        if(state.getI() == maxState.getI() && state.getJ() == maxState.getJ() - 1){
+        if(state.getI() == maxState.getI() && state.getJ() + 1 == maxState.getJ()){
             return new Right(Config.RIGHT);
-        }else if(state.getI() == maxState.getI() && state.getJ() == maxState.getJ() + 1){
+        }else if(state.getI() == maxState.getI() && state.getJ() - 1 == maxState.getJ()){
             return new Left(Config.LEFT);
-        }else if(state.getI() == maxState.getI() - 1 && state.getJ() == maxState.getJ()){
-            return new Up(Config.UP);
-        }else if(state.getI() == maxState.getI() + 1 && state.getJ() == maxState.getJ()){
+        }else if(state.getI() + 1 == maxState.getI()&& state.getJ() == maxState.getJ()){
             return new Down(Config.DOWN);
+        }else if(state.getI() - 1 == maxState.getI() && state.getJ() == maxState.getJ()){
+            return new Up(Config.UP);
         }
         throw new RuntimeException();
     }

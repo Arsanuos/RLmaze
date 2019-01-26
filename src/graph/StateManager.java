@@ -13,7 +13,6 @@ public class StateManager {
     private List<State> states;
 
     private static StateManager ourInstance = new StateManager();
-    private StateFactory stateFactory;
 
     public static StateManager getInstance() {
 
@@ -21,20 +20,29 @@ public class StateManager {
     }
     private StateManager() {
         this.states = new ArrayList<State>();
-        this.stateFactory = new StateFactory();
         this.graph = new HashMap<>();
     }
 
     public void initGraph(){
-        getBlockStates();
+        //getBlockStates();
+        Random rand = new Random();
+        int cnt = Config.BOLCKS_NUMBER;
+        System.out.println(Config.BOLCKS_NUMBER);
         for(int i= 0 ; i < Config.N ; i++){
             for(int j = 0 ;j < Config.N ; j++){
-                Query q = new Query(i, j);
-                if(!graph.containsKey(q)){
+                int x = rand.nextInt(2);
+                if(x == 1 && cnt != 0 && (i != 0 && j != 0) && (i != Config.N - 1 && j != Config.N - 1)){
+                    cnt--;
+                    State state = StateFactory.getState(Config.StateTypes.BLOCK, i, j);
+                    addState(state);
+                }else if(i == Config.N - 1  && j == Config.N - 1){
+                    addState(StateFactory.getState(Config.StateTypes.GOAL, i, j ));
+                }else{
                     addState(StateFactory.getState(Config.StateTypes.NORMAL_STATE, i, j));
                 }
             }
         }
+        this.getAllStates().get(0).setContainsPlayer(true);
     }
 
 
@@ -67,7 +75,10 @@ public class StateManager {
         List<State> neighbours = new ArrayList<>();
         for(int i = 0 ;i < di.length; i++){
             Query q = new Query(state.getI() + di[i], state.getJ() + dj[i]);
-            neighbours.add(getState(q, state));
+            State newState = getState(q, state);
+            if(!newState.equals(state)){
+                neighbours.add(newState);
+            }
         }
         return neighbours;
     }
@@ -96,14 +107,11 @@ public class StateManager {
                 x = rand.nextInt(Config.N - 1);
                 y = rand.nextInt(Config.N - 1);
             }while(hash_Set.contains(new Query(x, y)));
-            State state = StateFactory.getState(Config.StateTypes.BLOCK, x, y);
-            blocks.add(state);
-            states.add(state);
         }
     }
 
     private void addState(State state){
-        if(state instanceof State){
+        if(!(state instanceof graph.Block)){
             addActionsTo(state);
         }
         this.states.add(state);
@@ -118,4 +126,29 @@ public class StateManager {
         actions.add(new Right(Config.RIGHT));
         state.setActions(actions);
     }
+
+    public void printGrid(){
+        System.out.println("============================================");
+        for(int i=0 ;i < Config.N; i++){
+            for(int j = 0 ;j < Config.N; j++){
+                System.out.print(graph.get(new Query(i, j)).getValue() + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void printAction(){
+        for(int i=0 ;i < Config.N; i++){
+            for(int j = 0 ;j < Config.N; j++){
+                State state = graph.get(new Query(i, j));
+                if(!state.isBlock()){
+                    System.out.print(state.getActions().get(0).getType() + " ");
+                }else{
+                    System.out.print("NONE ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
 }

@@ -17,25 +17,31 @@ public class PolicyIteration implements policyIF{
         StateManager stateManager = StateManager.getInstance();
         List<Action> prevActions = stateManager.getAllActions();
         int i = 0;
-        while(i == 0 && !stateManager.sameActions(prevActions)){
+        while(i == 0 || !stateManager.sameActions(prevActions)){
             modifyValues();
+            StateManager.getInstance().printGrid();
+            StateManager.getInstance().printAction();
             i += 1;
             prevActions = stateManager.getAllActions();
             improvePolicy();
         }
+        StateManager.getInstance().printGrid();
+        StateManager.getInstance().printAction();
     }
 
     private void modifyValues(){
         StateManager stateManager = StateManager.getInstance();
         for(int k = 0 ;k < Config.POLICY_ITERATION; k++){
             for(State state: stateManager.getAllStates()){
-                List<Action> actions = state.getActions();
-                double val = 0;
-                double pi = 1/actions.size();
-                for(Action action: actions){
-                    val += pi * (Config.R + Config.EPS * action.getNextStateValue(state));
-                }
-                state.setValue(val);
+               if(!state.isBlock() && !state.isGoal()){
+                   List<Action> actions = state.getActions();
+                   double val = 0;
+                   double pi = 1.0/actions.size();
+                   for(Action action: actions){
+                       val += pi * (Config.R + Config.EPS * action.getNextStateValue(state));
+                   }
+                   state.setValue(val);
+               }
             }
         }
     }
